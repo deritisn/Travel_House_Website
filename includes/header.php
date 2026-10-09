@@ -34,10 +34,6 @@ $currentPage = $currentPage ?? '';
 <header class="site-header" data-header>
     <a class="brand brand-v3" href="index.php" aria-label="Travel House, Inc. home">
         <img src="assets/images/Travel_House_Logo_Long_Final.png" alt="Travel House logo" class="brand-logo">
-        <span class="brand-wordmark">
-            <strong>Travel House</strong>
-            <small>Bringing the world to your doorstep.</small>
-        </span>
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
         <span>Menu</span>
