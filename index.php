@@ -27,7 +27,7 @@ require __DIR__ . '/includes/header.php';
             <img src="assets/images/balos-beach.webp" alt="Turquoise water at Balos Beach.">
             <figcaption><b>Balos Beach</b><span>35.5844° N</span></figcaption>
         </figure>
-        <div class="v2-stamp" data-parallax="1.7"><strong>23</strong><span>countries<br>explored</span></div>
+        <div class="v2-stamp" data-parallax="1.7"><strong>24</strong><span>countries<br>explored</span></div>
         <div class="v2-marquee" aria-hidden="true"><div>RIVER CRUISES ✦ CUSTOM JOURNEYS ✦ OCEAN CRUISES ✦ EXPEDITIONS ✦ ADVENTURE TRAVEL ✦ BIKING TOURS ✦&nbsp; RIVER CRUISES ✦ CUSTOM JOURNEYS ✦ OCEAN CRUISES ✦ EXPEDITIONS ✦ ADVENTURE TRAVEL ✦ BIKING TOURS ✦&nbsp;</div></div>
     </section>
 
@@ -79,7 +79,7 @@ require __DIR__ . '/includes/header.php';
         </div>
         <div class="v2-principles">
             <article class="principle-card card-blue reveal"><span>01 / Personal</span><h3>Designed around you</h3><p>No templates. Every detail begins with how you want to travel.</p><i aria-hidden="true">✦</i></article>
-            <article class="principle-card card-mint reveal"><span>02 / Experienced</span><h3>Guided by the real world</h3><p>Insight shaped by 23 countries, life abroad, and years in travel.</p><i aria-hidden="true">23</i></article>
+            <article class="principle-card card-mint reveal"><span>02 / Experienced</span><h3>Guided by the real world</h3><p>Insight shaped by 24 countries, life abroad, and years in travel.</p><i aria-hidden="true">24</i></article>
             <article class="principle-card card-coral reveal"><span>03 / Effortless</span><h3>Easy from here</h3><p>Thoughtful guidance before, during, and after your journey.</p><i aria-hidden="true">↗</i></article>
         </div>
         <figure class="v2-group-photo reveal">
