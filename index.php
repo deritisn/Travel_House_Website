@@ -2,7 +2,7 @@
 declare(strict_types=1);
 require __DIR__ . '/includes/config.php';
 
-$pageTitle = 'Travel House, Inc. | Make the World Your Story';
+$pageTitle = 'Travel House, Inc. Bringing the world to your doorstep.';
 $pageDescription = 'Go beyond the expected with personal, thoughtfully planned journeys from Travel House, Inc.';
 $currentPage = 'home';
 require __DIR__ . '/includes/header.php';
