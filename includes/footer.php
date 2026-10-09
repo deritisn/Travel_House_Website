@@ -11,7 +11,7 @@
     </div>
     <div class="footer-bottom">
         <a class="brand brand-v3" href="index.php" aria-label="Travel House, Inc. home">
-            <img src="assets/images/Travel_House_Logo_Long_Final.png" alt="Travel House logo" class="brand-logo">
+            <img src="assets/images/travel-house-long-logo-no-background.png" alt="Travel House logo" class="brand-logo">
         </a>
         <div class="footer-contact">
             <p class="eyebrow eyebrow-light">Contact</p>
