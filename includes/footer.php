@@ -10,9 +10,8 @@
         </a>
     </div>
     <div class="footer-bottom">
-        <a class="footer-brand brand-v3" href="index.php" aria-label="Travel House, Inc. home">
-            <span class="brand-orbit" aria-hidden="true"><i>✈</i></span>
-            <span class="brand-wordmark"><strong>Travel House</strong><small>The world is waiting.</small></span>
+        <a class="brand brand-v3" href="index.php" aria-label="Travel House, Inc. home">
+            <img src="assets/images/Travel_House_Logo_Long_Final.png" alt="Travel House logo" class="brand-logo">
         </a>
         <div class="footer-contact">
             <p class="eyebrow eyebrow-light">Contact</p>
