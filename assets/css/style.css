@@ -1,8 +1,8 @@
 :root {
   --ink: #173f3a;
   --ink-deep: #0d2c29;
-  --paper: #f6f0e7;
-  --paper-warm: #eadfce;
+  --paper: white;
+  --paper-warm: white;
   --white: #fffdf9;
   --coral: #ef7555;
   --sun: #e5b655;
