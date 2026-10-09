@@ -12,7 +12,7 @@ require __DIR__ . '/includes/header.php';
         <div class="route route-one" aria-hidden="true"><i>✦</i></div>
         <div class="route route-two" aria-hidden="true"><i>↗</i></div>
         <div class="v2-hero-copy reveal">
-            <p class="v2-kicker"><span>Travel House, Inc.</span> Big world. Thoughtfully yours.</p>
+            <p class="v2-kicker"><span>Travel House, Inc.</span> Bringing the world to your doorstep.</p>
             <h1>Make the world<br><em>your story.</em></h1>
             <div class="v2-hero-bottom">
                 <p>Thoughtfully curated journeys for curious travelers who want to go beyond the expected.</p>
