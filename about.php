@@ -13,7 +13,7 @@ require __DIR__ . '/includes/header.php';
         <div class="v2-about-copy reveal">
             <p class="v2-kicker"><span>Meet your travel advisor</span> Story collector · Fluent in Italian · Curious by nature</p>
             <h1>Ciao, I’m<br><em>Nick.</em></h1>
-            <p class="about-deck">A little about my love of travel—and why I believe the best journeys feel deeply personal.</p>
+            <p class="about-deck">A little about my love of travel and why I believe the best journeys feel deeply personal.</p>
         </div>
         <figure class="about-main-card reveal" data-parallax=".8">
             <img src="assets/images/nick-caitlin-taormina.webp" alt="Nick and Caitlin sharing a fun moment in Taormina.">
@@ -34,8 +34,8 @@ require __DIR__ . '/includes/header.php';
         </header>
         <div class="story-route" aria-hidden="true"><span></span><span></span><span></span></div>
         <article class="story-stop stop-one reveal">
-            <div class="story-year">23<small>countries</small></div>
-            <div><h2>First-hand wonder</h2><p>I’ve explored 23 countries and lived abroad in Italy where I completed an internship that deepened my connection to the culture, language, and people. Speaking Italian opened the doors to experiences most travelers only dream of, and it continues to shape the way I guide and design adventures today.</p></div>
+            <div class="story-year">24<small>countries</small></div>
+            <div><h2>First-hand wonder</h2><p>I’ve explored 24 countries and lived abroad in Italy where I completed an internship that deepened my connection to the culture, language, and people. Speaking Italian opened the doors to experiences most travelers only dream of, and it continues to shape the way I guide and design adventures today.</p></div>
         </article>
         <article class="story-stop stop-two reveal">
             <div class="story-year">SEA<small>home base</small></div>
