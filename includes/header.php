@@ -33,7 +33,7 @@ $currentPage = $currentPage ?? '';
 <a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header" data-header>
     <a class="brand brand-v3" href="index.php" aria-label="Travel House, Inc. home">
-        <img src="assets/images/Travel_House_Logo_Long_Final.png" alt="Travel House logo" class="brand-logo">
+        <img src="assets/images/TH_Logo_Transparent.png" alt="Travel House logo" class="brand-logo">
     </a>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" data-menu-toggle>
         <span>Menu</span>
