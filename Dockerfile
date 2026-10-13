@@ -1,4 +1,8 @@
 FROM php:8.3-apache
-COPY . /var/www/html/
+COPY --from=composer:2 /usr/bin/composer /usr/local/bin/composer
+WORKDIR /var/www/html
+COPY composer.json ./
+RUN composer install --no-dev --no-interaction --prefer-dist --optimize-autoloader
+COPY . .
 RUN a2enmod rewrite
 EXPOSE 80

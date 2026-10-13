@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 require __DIR__ . '/includes/config.php';
+require __DIR__ . '/includes/mailer.php';
 
 $pageTitle = 'Contact | Plan Your Next Trip with Travel House';
 $pageDescription = 'Tell Travel House what kind of journey you are dreaming about and start planning an effortless, unforgettable adventure.';
@@ -51,19 +52,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             . "Email: {$form['email']}\n"
             . "Interested in: " . ($form['interest'] ?: 'Not specified') . "\n\n"
             . "Message:\n{$form['message']}";
-        $headers = [
-            'From: Travel House Website <no-reply@travelhouse.com>',
-            'Reply-To: ' . $form['email'],
-            'Content-Type: text/plain; charset=UTF-8',
-        ];
-
-        $success = @mail(CONTACT_EMAIL, $subject, $body, implode("\r\n", $headers));
+        $success = send_contact_email(CONTACT_EMAIL, $subject, $body, $form['email']);
         if ($success) {
             $_SESSION['last_inquiry_at'] = time();
             $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
             $form = array_fill_keys(array_keys($form), '');
         } else {
-            $errors[] = 'The message service is not configured yet. Please email nick@travelhouse.com or call (206) 248-0900.';
+            $errors[] = 'The message service is temporarily unavailable. Please email nick@travelhouse.com or call (206) 248-0900.';
         }
     }
 }
