@@ -43,7 +43,7 @@ require __DIR__ . '/includes/header.php';
         </article>
         <article class="story-stop stop-three reveal">
             <div class="story-year">03<small>Italy tours</small></div>
-            <div><h2>Sharing the hidden gems</h2><p>I have also co-led three immersive tours through Italy with Poggi Bonsi Tours where I shared my love of Italian food, culture, history, and hidden gems with fellow explorers.</p></div>
+            <div><h2>Sharing the hidden gems</h2><p>I have also co-led multiple immersive tours through Italy with Poggi Bonsi Tours where I shared my love of Italian food, culture, history, and hidden gems with fellow explorers.</p></div>
         </article>
     </section>
 
