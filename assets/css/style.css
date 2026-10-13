@@ -470,6 +470,7 @@ h1, h2, h3 { text-wrap: balance; }
 .circle-link:hover { background: var(--coral); transform: rotate(8deg); }
 .footer-bottom { display: grid; grid-template-columns: 1fr .55fr .55fr auto; gap: 60px; align-items: end; padding-top: 45px; border-top: 1px solid rgba(255,255,255,.18); }
 .footer-brand img { width: 220px; height: auto; filter: brightness(0) invert(1); }
+.site-footer .brand-v3 .brand-logo { box-sizing: border-box; width: 220px; padding: 8px; background: #fff; border-radius: 8px; filter: none; }
 .footer-contact, .footer-social { display: flex; flex-direction: column; align-items: flex-start; }
 .footer-contact .eyebrow, .footer-social .eyebrow { margin-bottom: 12px; }
 .footer-contact a, .footer-social a { font-size: .8rem; line-height: 1.8; }
