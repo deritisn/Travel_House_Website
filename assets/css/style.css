@@ -766,10 +766,11 @@ h1, h2, h3 { text-wrap: balance; }
   .v2-stamp { top: 28%; right: 20%; }
 }
 @media (max-width: 680px) {
-  .v2-hero { min-height: 850px; }
-  .v2-hero-copy { width: 100%; padding-top: 135px; }
+  .v2.v3 .v2-hero { min-height: 1050px; }
+  .v2.v3 .v2-hero-copy { width: 100%; padding-top: 135px; }
   .v2-kicker { align-items: flex-start; flex-direction: column; max-width: 260px; line-height: 1.6; }
-  .v2-hero h1 { font-size: clamp(4.3rem, 21vw, 6.5rem); }
+  .v2.v3 .v2-hero h1 { font-size: clamp(3.25rem, 15vw, 5rem); line-height: .9; }
+  .v2.v3 .v2-hero h1 em { margin-left: 0; }
   .v2-hero-bottom { display: block; margin: 38px 0 0; }
   .v2-hero-bottom p { margin-bottom: 24px; }
   .card-amalfi { top: auto; right: -7%; bottom: 70px; width: 48vw; }
