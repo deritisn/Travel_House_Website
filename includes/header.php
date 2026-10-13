@@ -23,8 +23,8 @@ $currentPage = $currentPage ?? '';
     <meta name="twitter:description" content="<?= e($pageDescription) ?>">
     <meta name="twitter:image" content="https://www.travelhouse.com/assets/images/og-v3.png">
     <title><?= e($pageTitle) ?></title>
-    <link rel="icon" type="image/png" href="assets/images/New_TH_Logo_Perfect_Square.png">
-    <link rel="apple-touch-icon" href="assets/images/New_TH_Logo_Perfect_Square.png">
+    <link rel="icon" type="image/png" href="assets/images/Website_Browser_Favicon.png">
+    <link rel="apple-touch-icon" href="assets/images/Website_Browser_Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
