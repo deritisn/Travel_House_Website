@@ -8,6 +8,7 @@ $pageDescription = 'Tell Travel House what kind of journey you are dreaming abou
 $currentPage = 'contact';
 $errors = [];
 $success = false;
+$csrfIssue = false;
 
 $form = [
     'first_name' => '',
@@ -29,7 +30,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $honeypot = trim((string)($_POST[$honeypotField] ?? $_POST['company_website'] ?? ''));
 
     if (!hash_equals(csrf_token(), $token)) {
-        $errors[] = 'Your session expired. Please refresh the page and try again.';
+        $csrfIssue = true;
+        $errors[] = 'This form may be stale. Please refresh the page and try again.';
     }
     if ($honeypot !== '') {
         $errors[] = 'Unable to send this request.';
