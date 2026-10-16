@@ -17,13 +17,16 @@ $form = [
     'message' => '',
 ];
 
+$honeypotField = $_SESSION['honeypot_field'] ?? 'contact_' . bin2hex(random_bytes(4));
+$_SESSION['honeypot_field'] = $honeypotField;
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     foreach (array_keys($form) as $field) {
         $form[$field] = trim((string)($_POST[$field] ?? ''));
     }
 
     $token = (string)($_POST['csrf_token'] ?? '');
-    $honeypot = trim((string)($_POST['company_website'] ?? ''));
+    $honeypot = trim((string)($_POST[$honeypotField] ?? $_POST['company_website'] ?? ''));
 
     if (!hash_equals(csrf_token(), $token)) {
         $errors[] = 'Your session expired. Please refresh the page and try again.';
@@ -108,8 +111,7 @@ require __DIR__ . '/includes/header.php';
             <form class="inquiry-form" method="post" action="contact.php" novalidate>
                 <input type="hidden" name="csrf_token" value="<?= e(csrf_token()) ?>">
                 <div class="honeypot" aria-hidden="true">
-                    <label for="company_website">Company website</label>
-                    <input id="company_website" name="company_website" type="text" tabindex="-1" autocomplete="off">
+                    <input id="<?= e($honeypotField) ?>" name="<?= e($honeypotField) ?>" type="text" tabindex="-1" autocomplete="off" value="">
                 </div>
                 <div class="form-row">
                     <label>First name <span>*</span><input type="text" name="first_name" value="<?= e($form['first_name']) ?>" autocomplete="given-name" required></label>
