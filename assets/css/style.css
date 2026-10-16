@@ -460,6 +460,29 @@ h1, h2, h3 { text-wrap: balance; }
 .form-message p, .form-message ul { margin: 8px 0 0; }
 .form-message.success { color: white; background: var(--ink); border-color: var(--sun); }
 .form-message.error { background: rgba(239,117,85,.12); border-color: var(--coral); }
+.page-success-banner {
+  position: sticky;
+  z-index: 40;
+  top: var(--header-h);
+  padding: 0 var(--pad);
+  background: rgba(23, 63, 58, .96);
+  box-shadow: 0 1px 0 rgba(255,255,255,.12);
+}
+.page-success-banner__inner {
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  color: white;
+  font-size: .95rem;
+}
+.page-success-banner__inner strong {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+.page-success-banner__inner span { opacity: .92; }
 
 .site-footer { padding: clamp(90px, 10vw, 150px) var(--pad) 35px; color: white; background: var(--ink-deep); }
 .footer-top { display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 60px; padding-bottom: 90px; }

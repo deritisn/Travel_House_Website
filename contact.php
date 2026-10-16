@@ -9,6 +9,7 @@ $currentPage = 'contact';
 $errors = [];
 $success = false;
 $csrfIssue = false;
+$showGlobalSuccess = false;
 
 $form = [
     'first_name' => '',
@@ -62,6 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $_SESSION['last_inquiry_at'] = time();
             $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
             $form = array_fill_keys(array_keys($form), '');
+            $showGlobalSuccess = true;
         } else {
             $errors[] = 'The message service is temporarily unavailable. Please email nick@travelhouse.com or call (206) 248-0900.';
         }
@@ -70,6 +72,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
 require __DIR__ . '/includes/header.php';
 ?>
+<?php if ($showGlobalSuccess): ?>
+    <div class="page-success-banner" role="status" aria-live="polite">
+        <div class="page-success-banner__inner">
+            <strong>Message sent.</strong>
+            <span>Thank you for reaching out. Nick will get back to you soon.</span>
+        </div>
+    </div>
+<?php endif; ?>
 <main id="main-content">
     <section class="v2-contact-hero" data-motion-scene>
         <div class="contact-map-grid" aria-hidden="true"></div>
