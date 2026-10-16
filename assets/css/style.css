@@ -462,7 +462,7 @@ h1, h2, h3 { text-wrap: balance; }
 .form-message.error { background: rgba(239,117,85,.12); border-color: var(--coral); }
 .page-success-banner {
   position: sticky;
-  z-index: 40;
+  z-index: 60;
   top: var(--header-h);
   padding: 0 var(--pad);
   background: rgba(23, 63, 58, .96);
